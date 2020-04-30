@@ -1,0 +1,11 @@
+#include <stdio.h>
+ //swapping two numbers without third variable
+int main()
+{
+    printf("Enter two different numbers for swapping \n");
+    int a,b;
+    scanf("%d \n %d",&a,&b);
+    printf("swapped a = %d \n swapped b =%d",a+b-a,b+a-b);
+    
+    return 0;
+}
