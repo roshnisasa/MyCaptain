@@ -1,0 +1,23 @@
+#include <stdio.h>
+ //menu using switch case
+main()
+{ printf("ENTER NUMBER FROM 1 TO 5 FOR A SURPRISE MENU SELECTION \n");
+ int a;
+scanf("%d",&a);
+switch(a)
+{
+case 1:printf("SURPRISE\n1.Pizza \n Rs.239");
+break;
+case 2:printf("SURPRISE\n2.Burger \n Rs.129");
+break;
+case 3:printf("SURPRISE\n3. Pasta \n Rs.179");
+break;
+case 4:printf("SURPRISE\n4.French Fries \n Rs.99");
+break;
+case 5:printf("SURPRISE\n5.Sandwich \n Rs.149");
+break;
+default: 
+printf("Please select menu option number");
+ }
+ return 0;
+}
