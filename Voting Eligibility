@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+cout<<"ENTER YOUR AGE TO CHECK YOUR ELIGIBILITY FOR VOTING RIGHTS \n";
+//Variable x is age given by the user
+int x ;
+cin>>x;
+if(x>=18)
+{
+    cout<<"VOILA!!! \n YOU'RE ELIGIBLE TO VOTE... MAKE IT COUNT!";
+}
+else
+{
+    cout<<"OOPS! YOU'RE INELIGIBLE TO VOTE \n WAIT FOR "<<18-x<<" YEAR(S)";
+}
+return 0;
+}
