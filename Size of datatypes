@@ -1,0 +1,8 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+//to find the size of char,int,float and double datatypes in the IDE
+cout<<"SIZE OF DATATYPES:\n 1. Size of char: "<< sizeof(char) << "bytes \n 2. Size of int: "<< sizeof(int) <<"bytes \n 3. Size of float: "<< sizeof(float) <<"bytes \n 4. Size of double: "<< sizeof(double) <<"bytes\n";
+return 0;
+}
