@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+//prime function declaration
+int prime(int n, int m);
+
+int main()
+{
+    int a;
+    cout<<"ENTER A NUMBER TO FIND ITS SUM AS SUM OF PRIMES : ";
+        cin>>a;
+        int i,x,y;
+    for(i=1;i<(a/2);i++)
+    {
+        x= prime(i,(i/2));
+        y= prime(a-i,((a-i)/2));
+
+        cout<<"THE SUM IS: ";
+        cout<<a<<" = "<<x<<"+"<<y;
+    }
+}
+
+    //prime function definition
+    int prime(int n, int m)
+    {
+        if(m==1)
+            return n;
+        else
+        {
+            if(n%m==0)
+                prime(n,m-1);
+        }
+    }
+
