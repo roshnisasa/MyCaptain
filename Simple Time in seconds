@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+//class definition
+class theTime{
+public:
+    float H;
+    float M;
+    float S;
+    };
+    
+int main()
+    {
+        theTime T;  //Creating object T in class theTime
+        
+        cout<<"ENTER TIME \n HOURS? ";
+        cin>>T.H;
+        cout<<"\n MINUTES?  ";
+        cin>>T.M;
+        cout<<"\n SECONDS?  ";
+        cin>>T.S;
+
+        cout<<"\n The time is = "<<T.H<<" : "<<T.M<<" : "<<T.S;
+        
+        //total seconds
+        float totsec=(T.H*60*60)+(T.M*60)+T.S;
+        cout<<"\n Time in total second : "<<totsec<<" seconds \n";
+        
+        return 0;
+    }
