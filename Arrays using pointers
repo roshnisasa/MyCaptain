@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    cout<<"NUMBER OF ELEMENTS YOU WANT TO ENTER IN THE ARRAY =\t";
+    //x is the number of elements in the array
+    int x;
+    cin>>x;
+
+    int arr[x];
+    int i;
+    //*A is the pointer
+    int *A;
+
+    A =arr;
+    cout<<"\n Enter integers in the array :\n";      //TAKING INTEGERS FROM THE USER INTO THE ARRAY
+        for(i=0;i<x;i++)
+    {
+        cin>>*A;
+        A++;
+    }
+
+    A=arr;
+    cout<<"\n The integers that you entered are :";  //PRINTING THE INTEGERS INSIDE ARRAY
+        for(i=0;i<x;i++)
+    {
+        cout<<"\n"<<*A;
+        A++;
+    }
+return 0;
+}
