@@ -1,0 +1,14 @@
+package conversion;
+import java.util.*;
+public class Conversion {
+      public static void main(String[] args) {
+        Scanner s= new Scanner(System.in);
+        System.out.println("Enter mintues to be converted");
+        int n=s.nextInt();
+         int x = n/(60*24); //total days
+         int y= x/365; //total years
+         double z =(double)(n % (60*24*365))/(60*24); // days left after calculating years in whole numbers
+         System.out.println(n+" minutes is approximately "+y+" year(s) "+z+" days. "); 
+    }
+    
+}
